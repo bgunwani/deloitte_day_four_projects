@@ -1,0 +1,17 @@
+﻿@using Microsoft.AspNetCore.Http;
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome</title>
+</head>
+<body>
+    <h3>Welcome @Context.Session.GetString("username");</h3>
+</body>
+</html>
